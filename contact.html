@@ -44,68 +44,65 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        table, th, td {
-          border: 1px solid #00000052;
+        
+       
+       
+        .table,th, td  {
+  width: 100%;
+  border: 1px solid #00000052;
           border-collapse: collapse;
-        }
-        th{
-        background:#EC1D25;
+}
+
+.table td,
+.table th {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.table th {
+    background:#EC1D25;
         color: #fff;
-        }
-        tr:nth-child(even) {background: #e3e3e3}
-        tr:nth-child(odd) {background: #FFF}
-        th, td {
-          padding: 10px;
-          text-align: left;
-        }
-        @media screen and (max-width: 600px) {
-  table {
-    border: 0;
+}
+
+tr:nth-child(even) {background: #e3e3e3}
+tr:nth-child(odd) {background: #FFF}
+
+/*responsive*/
+
+@media (max-width: 500px) {
+  .table thead {
+    display: none;
   }
 
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
     display: block;
-    margin-bottom: .625em;
+    width: 100%;
   }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
+  .table tr {
+    margin-bottom: 15px;
   }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
+  .table td {
+    padding-left: 50%;
+    text-align: left;
+    position: relative;
+  }
+  .table td::before {
     content: attr(data-label);
-    float: left;
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
     font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
+    text-align: left;
   }
 }
+
 
         </style>
 
