@@ -44,32 +44,21 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <style>
-        
-        table { 
-	width: 750px; 
-	border-collapse: collapse; 
-	margin:50px auto;
-	}
-
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-	background: #eee; 
-	}
-
-th { 
-	background: #3498db; 
-	color: white; 
-	font-weight: bold; 
-	}
-
-td, th { 
-	padding: 10px; 
-	border: 1px solid #ccc; 
-	text-align: left; 
-	font-size: 18px;
-	}
-
-/* 
+        table, th, td {
+          border: 1px solid #00000052;
+          border-collapse: collapse;
+        }
+        th{
+        background:#EC1D25;
+        color: #fff;
+        }
+        tr:nth-child(even) {background: #e3e3e3}
+        tr:nth-child(odd) {background: #FFF}
+        th, td {
+          padding: 10px;
+          text-align: left;
+        }
+        /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
