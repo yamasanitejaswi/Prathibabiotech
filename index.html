@@ -67,6 +67,89 @@
         font-size: 17px;
        margin-bottom: 20px;
     }
+    #custom_carousel .item {
+
+color:#000;
+background-color:#eee;
+padding:20px 0;
+}
+#custom_carousel .controls{
+overflow-x: auto;
+overflow-y: hidden;
+padding:0;
+margin:0;
+white-space: nowrap;
+text-align: center;
+position: relative;
+background:#ddd
+}
+#custom_carousel .controls li {
+display: table-cell;
+width: 1%;
+max-width:90px
+}
+#custom_carousel .controls li.active {
+background-color:#eee;
+border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+overflow:hidden;
+display:block;
+font-size:10px;
+margin-top:5px;
+font-weight:bold
+}
+
+.slick-initialized .swipe-tab-content {
+position: relative;
+min-height: auto;
+}
+@media screen and (min-width: 767px) {
+.slick-initialized .swipe-tab-content {
+min-height: auto;
+}
+}
+.slick-initialized .swipe-tab {
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: none;
+border: 0;
+color: #757575;
+cursor: pointer;
+text-align: center;
+border-bottom: 2px solid rgba(0, 0, 0, 0);
+transition: all 0.5s;
+}
+.slick-initialized .swipe-tab:hover {
+color: #000;
+}
+.slick-initialized .swipe-tab.active-tab {
+border-bottom-color: #000;
+color: #000;
+font-weight: bold;
+}
+
+.main-container {
+padding: 25px;
+padding-top: 5%;
+
+}
+
+button.slick-prev.slick-arrow {
+/* top: 30px; */
+float: left;
+
+padding: 4px;
+border: none;
+
+}
+button.slick-next.slick-arrow {
+float: right;
+padding: 4px;
+border: none;
+}
 </style>
 
 </head>
@@ -250,7 +333,7 @@
     
     <!--====== Products PART START ======-->
 
-    <section class="services-area pb-190 pt-50">
+    <section class="services-area pb-50 pt-40">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">
@@ -260,302 +343,275 @@
                     </div>
                 </div>
             </div>
-       
-        <div data-tabs class="tabs">    
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-1" checked>
-              <label for="tab-1"><img src="assets/images/p1.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp1.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Cocoly
-                        </h3>
-                        <p>
-                            n the field of Agriculture, Cocoly is the world’s most sophisticated Granular Water soluble Fertilizer. There is a story behind the launch of Cocoly. The scientist who invented Cocoly, during his childhood his father got ill and the whole agriculture burden was to be beared by his grand mother, then he decided to help his grand mother in farming.
-                        </p>
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-2">
-              <label for="tab-2"><img src="assets/images/p2.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp2.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                   <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Pudami
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Super Potassium humate 25%
-                        </p>
-                        <p>
-                           <b>Benefits</b><br>
-                            N-P-K Stands for Nitrogen, Phosphorus and Potassium. These are 3 primaryfor healthygrowth. Nitrogen is important to stimulate growth rate and to “green up” theso that it can processmore efficiently.
-                        </p>
-                        
 
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="organic-fertilizers.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-3">
-              <label for="tab-3"><img src="assets/images/p3.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp3.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Gama
-                        </h3>
-                        <p>
-                           Latest combination NPK water soluble Fertilizer has been discovered after experimenting and examining the required quantity of Nitrogen, Phosphorous and Potassium to the plants during their development stage. It is Gama. Gama Water Soluble Fertilizer has Nitrogen 24%, Phosphorous 24% and Potassium 16%.
-                        </p>
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More</a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-4">
-              <label for="tab-4"><img src="assets/images/p4.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp4.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Avani
-                        </h3>
-                        <p>
-                            For the last 20 years, we are using the water soluble fertilizers in routine manner. There is no change in it. To junk that old Methods and the old products, we have developed a new water soluble fertilizer. (It has 15% Nitrogen, 8% Phosphorous, 35% Potassium, Carbon 4%, Boron 200 ppm, Ferrous EDTA 1000 ppm, Manganese EDTA 500 ppm, Copper EDTA 110 ppm, Zinc EDTA 150 ppm, Molybdenum EDTA 70 ppm).
-                        </p>
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="organic-fertilizers.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-5">
-              <label for="tab-5"><img src="assets/images/p5.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp5.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Zuca
-                        </h3>
-                        <p>
-                            For the last 20 years, we are using the water soluble fertilizers in routine manner. There is no change in it. To junk that old Methods and the old products, we have developed a new water soluble fertilizer. (It has 15% Nitrogen, 8% Phosphorous, 35% Potassium, Carbon 4%, Boron 200 ppm, Ferrous EDTA 1000 ppm, Manganese EDTA 500 ppm, Copper EDTA 110 ppm, Zinc EDTA 150 ppm, Molybdenum EDTA 70 ppm).
-                        </p>
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-6">
-              <label for="tab-6"><img src="assets/images/p6.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp6.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bio Don Copy
-                        </h3>
-                        <p>
-                            Tip Top is an international fungicide. Generally, we use one Fungicide for controlling two to three kinds of diseases. However, Tip Top controls all kinds of diseases and ensures that the crops won’t be effected by any diseases totally in an effective and speedy manner. Within 24 hours of spraying Tip Top, the action starts and within 3 days we can see the complete result. There won’t be any crop loss.
-                        </p>
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More</a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-7">
-              <label for="tab-7"><img src="assets/images/p7.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp7.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Revive
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Proteins, Amino acids, Micro Nutrients.
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            Revive is an instant highly protein food which makes the plant to recover speedily that has been affected by diseases and pests. It improves higher degree of photosynthesis in plants to increase chlorophyll. This makes crops lush green for long time.
-                        </p>
-                        
+                <div class="sub-header ">
+             <div class="swipe-tabs">
+            <div class="swipe-tab"><img src="assets/images/p1.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p2.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p3.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p4.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p5.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p6.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p7.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p8.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p9.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p10.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p11.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
+            <div class="swipe-tab"><img src="assets/images/p12.png" style="border-radius: 50%;width:100% ;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></div>
 
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-stimulant.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-8">
-              <label for="tab-8"><img src="assets/images/p8.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp8.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                   <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bet
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Humic Acid, Sea weed Extract with Micronutrients.
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            Bet chelates and enhances availability of nutrients. It increases beneficial soil microbe activity resulting in healthier soil which means a healthier plant. Bet increases chlorophyll concentration in the plants leading to higher degree of photosynthesis. 
-                        </p>
-                        
-
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-stimulant.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-9">
-              <label for="tab-9"><img src="assets/images/p9.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp9.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                   <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">CID
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Bacillus Thurengensis Vr Kustaki.
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            CID releases endotoxins into the plants. It acts on midgut epithelium causing disintegration of gut wall, stopping of feeding activity and starvation leading to generate paralysis of larval body. 
-                        </p>
-                        
-
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-pesticide.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-10">
-              <label for="tab-10"><img src="assets/images/p10.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp10.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                   <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Tricho Rich
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Trichoderma Viride.
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            Tricho Rich is an antagonistic bio fungicide. It destroys the fungal pathogens by secreting toxins like Glyotoxin, viridian and Trichodermin. It reacts with the cell walls of pathogenic fungi or bacteria.  
-                        </p>
-                        
-
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-11">
-              <label for="tab-11"><img src="assets/images/p11.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp11.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Flick
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Psuedomonos Fluoresceins
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            Flick is a systemic bio fungicide. It produces sideropores and antibiotics which inhibits the growth of disease causing organisms. It secrets certain enzymes that has the capability to destroy the cell wall of fungal and bacterial pathogens.   
-                        </p>
-                        
-
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More</a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-           <div class="tab">
-              <input type="radio" name="tabgroup" id="tab-12">
-              <label for="tab-12"><img src="assets/images/p12.png" style="border-radius: 50%;width: 77px;height: 77px;background: #FFF;border-radius: 50%;border: 2px solid #00963f;display: inline-block; margin: 0 0 20px; position: relative;"></label>
-              <div class="tab__content">
-                 <div class="row">
-                    <div class="col-sm-3">
-                        <img src="assets/images/tabp12.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
-                    </div>
-                    <div class="col-sm-9">
-                        <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bio Don
-                        </h3>
-                        <p>
-                           <b>Composition</b><br>
-                            Bacillus Subtilis, Bacillus Megaterium, Bacillus Lechiniformis.
-                        </p>
-                        <p>
-                           <b>Mode of Action</b><br>
-                            It is an antagonistic biological agent. The bacterium colonizes the root and leaf system and competes and there by suppresses the growth of the plant disease causing organisms.
-                        </p>
-                        
-
-                        <br>
-                        <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More </a>
-                    </div>
-                 </div>
-              </div> 
-           </div>
-       </div>
+          </div>
         </div>
-    
-    </section>
+        <div class="main-container">
+          <div class="swipe-tabs-container ">
+            <div class="swipe-tab-content"> 
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp1.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Cocoly
+                                </h3>
+                                <p>
+                                    n the field of Agriculture, Cocoly is the world’s most sophisticated Granular Water soluble Fertilizer. There is a story behind the launch of Cocoly. The scientist who invented Cocoly, during his childhood his father got ill and the whole agriculture burden was to be beared by his grand mother, then he decided to help his grand mother in farming.
+                                </p>
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More </a>
+                            </div>
+                         </div>
+                     </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp2.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                           <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Pudami
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Super Potassium humate 25%
+                                </p>
+                                <p>
+                                   <b>Benefits</b><br>
+                                    N-P-K Stands for Nitrogen, Phosphorus and Potassium. These are 3 primaryfor healthygrowth. Nitrogen is important to stimulate growth rate and to “green up” theso that it can processmore efficiently.
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="organic-fertilizers.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp3.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Gama
+                                </h3>
+                                <p>
+                                   Latest combination NPK water soluble Fertilizer has been discovered after experimenting and examining the required quantity of Nitrogen, Phosphorous and Potassium to the plants during their development stage. It is Gama. Gama Water Soluble Fertilizer has Nitrogen 24%, Phosphorous 24% and Potassium 16%.
+                                </p>
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More</a>
+                            </div>
+                         </div>
+
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp4.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Avani
+                                </h3>
+                                <p>
+                                    For the last 20 years, we are using the water soluble fertilizers in routine manner. There is no change in it. To junk that old Methods and the old products, we have developed a new water soluble fertilizer. (It has 15% Nitrogen, 8% Phosphorous, 35% Potassium, Carbon 4%, Boron 200 ppm, Ferrous EDTA 1000 ppm, Manganese EDTA 500 ppm, Copper EDTA 110 ppm, Zinc EDTA 150 ppm, Molybdenum EDTA 70 ppm).
+                                </p>
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="organic-fertilizers.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp5.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Zuca
+                                </h3>
+                                <p>
+                                    For the last 20 years, we are using the water soluble fertilizers in routine manner. There is no change in it. To junk that old Methods and the old products, we have developed a new water soluble fertilizer. (It has 15% Nitrogen, 8% Phosphorous, 35% Potassium, Carbon 4%, Boron 200 ppm, Ferrous EDTA 1000 ppm, Manganese EDTA 500 ppm, Copper EDTA 110 ppm, Zinc EDTA 150 ppm, Molybdenum EDTA 70 ppm).
+                                </p>
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="water-soluble-fertilizers.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp6.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bio Don Copy
+                                </h3>
+                                <p>
+                                    Tip Top is an international fungicide. Generally, we use one Fungicide for controlling two to three kinds of diseases. However, Tip Top controls all kinds of diseases and ensures that the crops won’t be effected by any diseases totally in an effective and speedy manner. Within 24 hours of spraying Tip Top, the action starts and within 3 days we can see the complete result. There won’t be any crop loss.
+                                </p>
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More</a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp7.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Revive
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Proteins, Amino acids, Micro Nutrients.
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    Revive is an instant highly protein food which makes the plant to recover speedily that has been affected by diseases and pests. It improves higher degree of photosynthesis in plants to increase chlorophyll. This makes crops lush green for long time.
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-stimulant.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp8.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                           <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bet
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Humic Acid, Sea weed Extract with Micronutrients.
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    Bet chelates and enhances availability of nutrients. It increases beneficial soil microbe activity resulting in healthier soil which means a healthier plant. Bet increases chlorophyll concentration in the plants leading to higher degree of photosynthesis. 
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-stimulant.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp9.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                           <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">CID
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Bacillus Thurengensis Vr Kustaki.
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    CID releases endotoxins into the plants. It acts on midgut epithelium causing disintegration of gut wall, stopping of feeding activity and starvation leading to generate paralysis of larval body. 
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-pesticide.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp10.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                           <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Tricho Rich
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Trichoderma Viride.
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    Tricho Rich is an antagonistic bio fungicide. It destroys the fungal pathogens by secreting toxins like Glyotoxin, viridian and Trichodermin. It reacts with the cell walls of pathogenic fungi or bacteria.  
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp11.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Flick
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Psuedomonos Fluoresceins
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    Flick is a systemic bio fungicide. It produces sideropores and antibiotics which inhibits the growth of disease causing organisms. It secrets certain enzymes that has the capability to destroy the cell wall of fungal and bacterial pathogens.   
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More</a>
+                            </div>
+                         </div>
+            </div>
+            <div class="swipe-tab-content">
+                <div class="row">
+                            <div class="col-sm-3">
+                                <img src="assets/images/tabp12.png" style="border-radius: 50%;  float: left;width: 100%;background: #ccc;margin-right: 3%;border-radius: 50%;overflow: hidden;border: 4px solid #FFF;">
+                            </div>
+                            <div class="col-sm-9">
+                                <h3 style="font-size: 30px;font-weight: 600;margin-bottom: 5px;color: #00963f;line-height: 1.2;">Bio Don
+                                </h3>
+                                <p>
+                                   <b>Composition</b><br>
+                                    Bacillus Subtilis, Bacillus Megaterium, Bacillus Lechiniformis.
+                                </p>
+                                <p>
+                                   <b>Mode of Action</b><br>
+                                    It is an antagonistic biological agent. The bacterium colonizes the root and leaf system and competes and there by suppresses the growth of the plant disease causing organisms.
+                                </p>
+                                
+
+                                <br>
+                                <a  style="background-color: transparent;border: 2px solid #000;color:black;display: inline-block;line-height: 1;padding: 12px 20px;" href="bio-fungicides.html">View More </a>
+                            </div>
+                         </div>
+            </div>
+
+          </div>
+        </div>
+               
+                
+                </div>   
+</section>
 
     <!--====== Products PART ENDS ======-->
 
@@ -781,6 +837,65 @@
    
 }(jQuery, document));
     </script>
+
+<script>
+    $(function () {
+'use strict';
+
+var $swipeTabsContainer = $('.swipe-tabs'),
+    $swipeTabs = $('.swipe-tab'),
+    $swipeTabsContentContainer = $('.swipe-tabs-container'),
+    currentIndex = 0,
+    activeTabClassName = 'active-tab';
+
+$swipeTabsContainer.on('init', function(event, slick) {
+    $swipeTabsContentContainer.removeClass('invisible');
+    $swipeTabsContainer.removeClass('invisible');
+
+    currentIndex = slick.getCurrent();
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+});
+
+$swipeTabsContainer.slick({
+    //slidesToShow: 3.25,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: true,
+    infinite: true,
+    swipeToSlide: true,
+    touchThreshold: 10
+});
+
+$swipeTabsContentContainer.slick({
+    asNavFor: $swipeTabsContainer,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    infinite: false,
+    swipeToSlide: true,
+draggable: false,
+    touchThreshold: 10
+});
+
+
+$swipeTabs.on('click', function(event) {
+    // gets index of clicked tab
+    currentIndex = $(this).data('slick-index');
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+    $swipeTabsContainer.slick('slickGoTo', currentIndex);
+    $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+});
+
+//initializes slick navigation tabs swipe handler
+$swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+    currentIndex = $(this).slick('slickCurrentSlide');
+    $swipeTabs.removeClass(activeTabClassName);
+    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+});
+});
+</script>
 </body>
 
 
