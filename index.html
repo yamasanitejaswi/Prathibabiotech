@@ -784,7 +784,7 @@ border: none;
     </div>
     <!--====== BACK TO TOP ======-->
 
-    <!--  prathiba -->
+ <!--  prathiba -->
   <div id="ac-wrapper" style='display:none'>
     <div id="popup">
         <center>
@@ -818,7 +818,6 @@ window.onload = function () {
 
 </script>
 <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
-      
 
 
 
@@ -873,64 +872,73 @@ window.onload = function () {
 }(jQuery, document));
     </script>
 
-<script>
-    $(function () {
-'use strict';
-
-var $swipeTabsContainer = $('.swipe-tabs'),
-    $swipeTabs = $('.swipe-tab'),
-    $swipeTabsContentContainer = $('.swipe-tabs-container'),
-    currentIndex = 0,
-    activeTabClassName = 'active-tab';
-
-$swipeTabsContainer.on('init', function(event, slick) {
-    $swipeTabsContentContainer.removeClass('invisible');
-    $swipeTabsContainer.removeClass('invisible');
-
-    currentIndex = slick.getCurrent();
-    $swipeTabs.removeClass(activeTabClassName);
-    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+    <script>
+        $(document).ready(function(ev){
+    $('#custom_carousel').on('slide.bs.carousel', function (evt) {
+      $('#custom_carousel .controls li.active').removeClass('active');
+      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
+    })
 });
+    </script>
 
-$swipeTabsContainer.slick({
-    //slidesToShow: 3.25,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    arrows: true,
-    infinite: true,
-    swipeToSlide: true,
-    touchThreshold: 10
-});
+    <script>
+        $(function () {
+    'use strict';
 
-$swipeTabsContentContainer.slick({
-    asNavFor: $swipeTabsContainer,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    swipeToSlide: true,
-draggable: false,
-    touchThreshold: 10
-});
+    var $swipeTabsContainer = $('.swipe-tabs'),
+        $swipeTabs = $('.swipe-tab'),
+        $swipeTabsContentContainer = $('.swipe-tabs-container'),
+        currentIndex = 0,
+        activeTabClassName = 'active-tab';
+
+    $swipeTabsContainer.on('init', function(event, slick) {
+        $swipeTabsContentContainer.removeClass('invisible');
+        $swipeTabsContainer.removeClass('invisible');
+
+        currentIndex = slick.getCurrent();
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+    });
+
+    $swipeTabsContainer.slick({
+        //slidesToShow: 3.25,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        infinite: true,
+        swipeToSlide: true,
+        touchThreshold: 10
+    });
+
+    $swipeTabsContentContainer.slick({
+        asNavFor: $swipeTabsContainer,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: false,
+        swipeToSlide: true,
+    draggable: false,
+        touchThreshold: 10
+    });
 
 
-$swipeTabs.on('click', function(event) {
-    // gets index of clicked tab
-    currentIndex = $(this).data('slick-index');
-    $swipeTabs.removeClass(activeTabClassName);
-    $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
-    $swipeTabsContainer.slick('slickGoTo', currentIndex);
-    $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
-});
+    $swipeTabs.on('click', function(event) {
+        // gets index of clicked tab
+        currentIndex = $(this).data('slick-index');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex +']').addClass(activeTabClassName);
+        $swipeTabsContainer.slick('slickGoTo', currentIndex);
+        $swipeTabsContentContainer.slick('slickGoTo', currentIndex);
+    });
 
-//initializes slick navigation tabs swipe handler
-$swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
-    currentIndex = $(this).slick('slickCurrentSlide');
-    $swipeTabs.removeClass(activeTabClassName);
-    $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+    //initializes slick navigation tabs swipe handler
+    $swipeTabsContentContainer.on('swipe', function(event, slick, direction) {
+        currentIndex = $(this).slick('slickCurrentSlide');
+        $swipeTabs.removeClass(activeTabClassName);
+        $('.swipe-tab[data-slick-index=' + currentIndex + ']').addClass(activeTabClassName);
+    });
 });
-});
-</script>
+    </script>
 </body>
 
 
