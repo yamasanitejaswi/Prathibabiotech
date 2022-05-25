@@ -385,6 +385,40 @@
         </a>
     </div>
     <!--====== BACK TO TOP ======-->
+    <!--  prathiba -->
+  <div id="ac-wrapper" style='display:none'>
+    <div id="popup">
+        <center>
+            <br>
+             <h3 style="color: white;font-size: 22px;font-weight: 600;">Please Select Your Lanugage </h3>
+             <br>
+               <div id="google_translate_element"></div>
+               <br>
+            <input type="submit" name="submit" style="background-color: white ;border: 2px solid black;color: black;display: inline-block;line-height: 1;padding: 10px 15px;font-size: 19px;border-radius: 15px;"  value="Submit" onClick="PopUp('hide')" />
+        </center>
+    </div>
+</div>
+  
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+
+    function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+    else document.getElementById('ac-wrapper').removeAttribute('style');
+}
+window.onload = function () {
+    setTimeout(function () {
+        PopUp('show');
+    }, 5000);
+}
+
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 
 
 
